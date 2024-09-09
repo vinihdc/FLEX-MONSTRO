@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página de Login</title>
+    <link rel="stylesheet" href="../style/login.css">
+    <script src="../js/login.js" defer></script>
+</head>
+<body>
+
+    <div class="title-background">
+        <h1>FLEX?</h1>
+    </div>
+    <div class="login-container">
+        <h2>Login</h2>
+        <form>
+            <input type="text" placeholder="Usuário" name="username" id="usuario">
+            <input type="password" placeholder="Senha" name="password" id="senha">
+            <div id="Erro" class="mensagemErro"></div> 
+            <button type="submit" onclick="logar(event)">Entrar</button>
+        </form>
+        <button onclick="location.href='cadastro.html'">Cadastrar-se</button>
+    </div>
+
+</body>
+</html>
+

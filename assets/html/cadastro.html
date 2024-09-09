@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página de Cadastro</title>
+    <link rel="stylesheet" href="../style/cadastro.css">
+    <script src="../js/cadastro.js" defer></script>
+</head>
+<body>
+    <div class="title-background">
+        <h1>FLEX?</h1>
+    </div>
+    <div class="cadastro-container">
+        <h2>Cadastro</h2>
+        <form onsubmit="return cadastrar(event)">
+            <input type="text" placeholder="Usuário" name="username" id="usuario">
+            <div id="nomeErro" class="mensagemErro"></div> 
+            <input type="password" placeholder="Senha" name="password" id="senha">
+            <div id="senhaErro" class="mensagemErro"></div> 
+            <input type="password" placeholder="Confirmar Senha" name="confirmPassword" id="confirmaSenha">
+            <div id="confirmSenhaErro" class="mensagemErro"></div> 
+            <button type="submit" onclick="cadastrar(event)">Cadastrar</button>
+        </form>
+        <a href="login.html">Já tem login?</a>
+    </div>
+</body>
+</html>

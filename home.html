@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página Inicial</title>
+    <link rel="stylesheet" href="./assets/style/home.css">
+    <script src="./assets/js/home.js" defer></script>
+</head>
+<body>
+
+    <nav class="navbar">
+        <a href="home.html" class="logo"><img src="./assets/fotos/home.png" alt="Logo"></a>
+        <button class="friends-btn" id="friendsButton">Amigos</button>
+
+        <link rel="stylesheet" type="text/css" media="screen" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
+
+        <div class="box">
+            <label class="avatar" for="fileInput">
+                <img src="http://placecage.com/100/100" alt="Avatar" id="profileImage">
+            </label>
+            <input type="file" id="fileInput" accept="image/*" style="display: none;">
+            <div class="menu" style="color: black;">
+                <a href="#"><i class="fa fa-edit"> <span>Editar</span></i></a>
+            </div>
+        </div>
+        <button class="sair-btn" id="sair-btn" onclick="sair()">Sair</button>
+    </nav>
+
+    <!-- Menu Lateral -->
+    <div class="sidebar" id="sidebar">
+        <h3 style="margin-left: 20px;">Amigos</h3>
+        <ul id="friendsList" style="margin-left: 20px;">
+            <!-- Lista de amigos será inserida aqui dinamicamente -->
+        </ul>
+    </div>
+
+    <div class="title-background">
+        <h1>DEIXAI TODA ESPERANÇA, VÓS QUE CONVOCAIS!</h1>
+    </div>
+    <div class="home-container">
+        <button id="notifyButton">Convocar</button>
+    </div>
+
+</body>
+</html>

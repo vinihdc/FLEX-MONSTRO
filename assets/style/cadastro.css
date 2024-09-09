@@ -1,0 +1,105 @@
+/* Estiliza o corpo da página, usando Flexbox para centralizar o conteúdo vertical e horizontalmente */
+body {
+    display: flex; /* Define o display como flex, ativando o Flexbox */
+    flex-direction: column; /* Organiza os elementos em uma coluna */
+    justify-content: center; /* Centraliza verticalmente os elementos */
+    align-items: center; /* Centraliza horizontalmente os elementos */
+    height: 60vh; /* Define a altura da tela como 100% da altura da janela do navegador */
+    margin: 0; /* Remove as margens padrão */
+    font-family: Arial, sans-serif; /* Define a fonte padrão da página */
+    background-color: #1c1c1e; /* Define a cor de fundo como um cinza escuro */
+    color: #e1e1e1; /* Define a cor do texto padrão como um cinza claro */
+}
+
+/* Faixa de fundo arredondada que cobre o título */
+.title-background {
+    width: 90%; /* Define uma largura menor para mostrar o arredondamento */
+    max-width: 800px; /* Limita a largura máxima */
+    background-color: #505050; /* Cor da faixa */
+    display: flex;
+    justify-content: center;
+    padding: 20px 0; /* Espaçamento vertical */
+    border-radius: 20px; /* Arredonda os cantos da faixa */
+    margin: 20px 0; /* Margem superior e inferior */
+}
+
+/* Estilização do título principal */
+h1 {
+    margin: 0;
+    font-size: 64px; /* Tamanho da fonte para maior impacto */
+    color: #ffffff; /* Cor do texto branco para destacar na faixa */
+    text-transform: uppercase; /* Texto em maiúsculas */
+    font-weight: bold; /* Deixa o texto mais espesso */
+    letter-spacing: 2px; /* Espaçamento entre as letras */
+}
+
+/* Estiliza o container do formulário de login */
+.cadastro-container {
+    background-color: #2c2c2e; /* Define o fundo do container como cinza escuro */
+    padding: 20px; /* Adiciona espaçamento interno ao container */
+    border-radius: 8px; /* Arredonda os cantos do container */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Adiciona uma sombra para dar profundidade */
+    width: 500px; /* Define a largura do container */
+    text-align: center; /* Centraliza o texto dentro do container */
+    margin-top: 20px; /* Adiciona um espaço entre o título e o formulário */
+}
+
+/* Estiliza o subtítulo do formulário de login */
+.cadastro-container h2 {
+    margin-bottom: 20px; /* Adiciona espaço abaixo do subtítulo */
+    color: #e1e1e1; /* Define a cor do subtítulo como cinza claro */
+}
+
+/* Estiliza os campos de entrada do formulário (input) */
+.cadastro-container input {
+    width: 90%; /* Define a largura dos campos como 100% do container */
+    padding: 10px; /* Adiciona espaçamento interno nos campos */
+    margin: 10px 0; /* Adiciona margem acima e abaixo dos campos */
+    border: 1px solid #444; /* Define uma borda cinza escura */
+    border-radius: 4px; /* Arredonda os cantos dos campos de entrada */
+    background-color: #3a3a3c; /* Define a cor de fundo dos campos como cinza mais claro */
+    color: #e1e1e1; /* Define a cor do texto dentro dos campos como cinza claro */
+}
+
+/* Estiliza o texto dos placeholders nos campos de entrada */
+.cadastro-container input::placeholder {
+    color: #a1a1a1; /* Define a cor do placeholder como cinza claro */
+}
+
+/* Estiliza o botão de envio do formulário */
+.cadastro-container button {
+    width: 75%; /* Define a largura do botão como 100% do container */
+    margin-bottom: 8px;
+    padding: 10px; /* Adiciona espaçamento interno ao botão */
+    background-color: #007aff; /* Define a cor de fundo do botão como azul vibrante */
+    color: white; /* Define a cor do texto do botão como branco */
+    border: none; /* Remove a borda padrão do botão */
+    border-radius: 4px; /* Arredonda os cantos do botão */
+    cursor: pointer; /* Muda o cursor para indicar que o botão é clicável */
+    transition: background-color 0.3s; /* Adiciona uma transição suave na mudança de cor */
+}
+
+/* Altera a cor de fundo do botão ao passar o mouse sobre ele */
+.cadastro-container button:hover {
+    background-color: #005ecb; /* Muda a cor de fundo para um tom de azul mais escuro */
+}
+
+/* Estiliza o link de "Já tem login?" */
+.cadastro-container a {
+    display: block; /* Exibe o link como um bloco */
+    margin-top: 10px; /* Adiciona margem acima do link */
+    color: #2492ff; /* Define a cor do link como azul */
+    text-decoration: none; /* Remove o sublinhado padrão do link */
+}
+
+/* Adiciona um sublinhado ao link quando o mouse passa sobre ele */
+.cadastro-container a:hover {
+    text-decoration: underline; /* Sublinha o link ao passar o mouse sobre ele */
+}
+
+.mensagemErro {
+    color: red; /* Define a cor do texto como vermelho */
+    font-size: 15px;
+    margin-top: 2px;
+    margin-bottom: 8px;
+}   
